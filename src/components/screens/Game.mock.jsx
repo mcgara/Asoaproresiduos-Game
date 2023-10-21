@@ -15,8 +15,6 @@ export default function GameScreen() {
 
   const handleTouch = () => setScreen(() => ({ active: 'MenuScreen' }))
 
-  const { width, height } = useWindowDimensions()
-  
   const matter = useMemo(() => {
     const matter = { engine: Matter.Engine.create(), deltaTime: 10 }
 
