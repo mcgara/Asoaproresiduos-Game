@@ -4,6 +4,7 @@ export default StyleSheet.create({
   box: {
     width: 40,
     height: 40,
-    backgroundColor: 'blue'
+    backgroundColor: 'blue',
+    position: 'absolute'
   }
 })

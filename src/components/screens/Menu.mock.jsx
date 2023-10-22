@@ -10,6 +10,7 @@ export default function MenuScreen() {
   return (
     <Pressable onPress={handleTouch}>
       <View style={styles.container}>
+        <Text style={styles.text}>Asoaproresiduos</Text>
         <Text style={styles.text}>Menu de Pausa</Text>
       </View>
     </Pressable>

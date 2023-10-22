@@ -3,7 +3,7 @@ import { GestureDetector } from 'react-native-gesture-handler'
 import Styles from '../styles/player.mock'
 import usePlayer from '../hooks/usePlayer.mock'
 
-/** @param {{ matter: import('../contexts/Matters').Matter }} */
+/** @param {{ matter: import('../contexts/Matters').MatterContext }} */
 export default function Player({ matter }) {
   const { gesture, animatedStyles } = usePlayer({ matter })
   

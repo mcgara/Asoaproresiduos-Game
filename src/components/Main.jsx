@@ -6,7 +6,7 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler'
 
 export default function Main() {
   return (
-    <View style={{ backgroundColor: 'black' }}>
+    <View style={{ backgroundColor: 'green' }}>
       <GestureHandlerRootView>
         <MattersProvider>
           <ScreensProvider screens={Screens}>

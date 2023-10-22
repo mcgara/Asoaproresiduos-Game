@@ -1,6 +1,6 @@
 import { useContext, useMemo, useEffect } from 'react'
-import { View, Text, StyleSheet, Pressable, useWindowDimensions } from 'react-native'
-import Animated, { useSharedValue, useAnimatedStyle, useFrameCallback } from 'react-native-reanimated'
+import { Text, StyleSheet, Pressable } from 'react-native'
+import Animated from 'react-native-reanimated'
 import { ScreensContext } from '../../contexts/Screens'
 import { MattersContext } from '../../contexts/Matters'
 
@@ -16,7 +16,7 @@ export default function GameScreen() {
   const handleTouch = () => setScreen(() => ({ active: 'MenuScreen' }))
 
   const matter = useMemo(() => {
-    const matter = { engine: Matter.Engine.create(), deltaTime: 10 }
+    const matter = { engine: Matter.Engine.create(), deltaTime: 16.6666666 }
 
     // const matter = Matters.get('GameScreen') ?? { engine: Matter.Engine.create(), deltaTime: 10 }
     // if (!Matters.has('GameScreen')) Matters.set('GameScreen', matter)
@@ -36,6 +36,18 @@ export default function GameScreen() {
       <Pressable onPress={handleTouch} style={styles.buttonToMenu} />
       <Text style={styles.text}>Gameplay</Text>
       <Player matter={matter} />
+      <Player matter={matter} />
+      <Player matter={matter} />
+      <Player matter={matter} />
+      <Player matter={matter} />
+      <Player matter={matter} />
+      <Player matter={matter} />
+      <Player matter={matter} />
+      <Player matter={matter} />
+      <Player matter={matter} />
+      <Player matter={matter} />
+      <Player matter={matter} />
+      <WallsScreens matter={matter} />
     </Animated.View>
   )
 }
@@ -44,8 +56,7 @@ const styles = StyleSheet.create({
   container: {
     height: '100%',
     justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'green'
+    alignItems: 'center'
   },
   text: {
     fontSize: 32

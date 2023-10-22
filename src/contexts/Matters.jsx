@@ -1,8 +1,8 @@
 import { createContext } from 'react'
 
 /**
- * @typedef {{ engine: import('matter-js').Engine, deltaTime: number }} Matter
- * @type {import('react').Context<Map<string, Matter>>}
+ * @typedef {{ engine: import('matter-js').Engine, deltaTime: number }} MatterContext
+ * @type {import('react').Context<Map<string, MatterContext>>}
  */
 export const MattersContext = createContext()
 
